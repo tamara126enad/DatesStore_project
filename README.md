@@ -6,7 +6,7 @@
 ## by  Tamara Al-Shabatat
 
 
-![](home\screencapture-localhost-DatesStore-2022-04-17-20_32_26.png)
+![](home\DatesStore.png)
 
 
 [Repo link ](https://github.com/tamara126enad/wp_project)
