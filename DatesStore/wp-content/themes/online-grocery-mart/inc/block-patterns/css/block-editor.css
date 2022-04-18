@@ -1,0 +1,52 @@
+.banner-section h1,.banner-section h2, .best-deal-section .deal-box h3{
+  font-family: 'Prata', serif !important;
+}
+.banner-section p, .banner-section .wp-block-button__link, .best-deal-section .deal-box .wp-block-button__link{
+  font-family: 'Roboto', sans-serif !important;
+}
+
+/*Banner section*/
+.banner-section p{
+  font-weight: 600;
+  letter-spacing: 3px;
+  margin-bottom: 0 !important;
+}
+.banner-section .wp-block-button__link{
+  font-size: 15px;
+  padding: 10px 20px;
+  font-weight: 600;
+}
+.banner-section .wp-block-button__link:hover{
+  background: #f79a21 !important;
+}
+
+/*Best Deal section*/
+.best-deal-section .deal-box, .best-deal-section .deal-box:before{
+  border-radius: 8px;
+}
+.best-deal-section .deal-box .block-editor-block-list__block{
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+.best-deal-section .deal-box h3, .banner-section h2, .banner-section h1{
+  margin-top: 0 !important;
+  margin-bottom: 10px !important;
+}
+.best-deal-section .deal-box .wp-block-button__link{
+  padding: 0;
+  background: transparent !important;
+  color: #1a1a1a !important;
+  border: 0;
+  font-size: 13px;
+  font-weight: 600;
+}
+.best-deal-section .deal-box .wp-block-button__link:after{
+  content: '\f054';
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  color: #fff;
+  background: #ff0000;
+  padding: 5px 7px;
+  border-radius: 50%;
+  margin-left: 5px;
+}

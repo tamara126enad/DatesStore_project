@@ -1,0 +1,41 @@
+<?php
+/**
+ * Online Grocery Mart: Block Patterns
+ *
+ * @package Online Grocery Mart
+ * @since   1.0.0
+ */
+
+/**
+ * Register Block Pattern Category.
+ */
+if ( function_exists( 'register_block_pattern_category' ) ) {
+
+	register_block_pattern_category(
+		'online-grocery-mart',
+		array( 'label' => __( 'Online Grocery Mart', 'online-grocery-mart' ) )
+	);
+}
+
+/**
+ * Register Block Patterns.
+ */
+if ( function_exists( 'register_block_pattern' ) ) {
+	register_block_pattern(
+		'online-grocery-mart/banner-section',
+		array(
+			'title'      => __( 'Banner Section', 'online-grocery-mart' ),
+			'categories' => array( 'online-grocery-mart' ),
+			'content'    => "<!-- wp:cover {\"url\":\"" . esc_url(get_theme_file_uri()) . "/inc/block-patterns/images/banner.png\",\"id\":943,\"dimRatio\":0,\"align\":\"full\",\"className\":\"banner-section px-lg-5\"} -->\n<div class=\"wp-block-cover alignfull banner-section px-lg-5\"><img class=\"wp-block-cover__image-background wp-image-943\" alt=\"\" src=\"" . esc_url(get_theme_file_uri()) . "/inc/block-patterns/images/banner.png\" data-object-fit=\"cover\"/><div class=\"wp-block-cover__inner-container\"><!-- wp:columns {\"align\":\"wide\",\"className\":\"my-0 mx-xl-5 mx-0\"} -->\n<div class=\"wp-block-columns alignwide my-0 mx-xl-5 mx-0\"><!-- wp:column -->\n<div class=\"wp-block-column\"><!-- wp:paragraph {\"style\":{\"typography\":{\"fontSize\":15},\"color\":{\"text\":\"#19764a\"}}} -->\n<p class=\"has-text-color\" style=\"color:#19764a;font-size:15px\">WELCOME TO SUPERMARKET</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading {\"level\":1,\"style\":{\"typography\":{\"fontSize\":60}},\"textColor\":\"black\"} -->\n<h1 class=\"has-black-color has-text-color\" style=\"font-size:60px\">Fresh Fruits and Groceries!</h1>\n<!-- /wp:heading -->\n\n<!-- wp:heading {\"textColor\":\"black\"} -->\n<h2 class=\"has-black-color has-text-color\">$74.99</h2>\n<!-- /wp:heading -->\n\n<!-- wp:buttons -->\n<div class=\"wp-block-buttons\"><!-- wp:button {\"borderRadius\":30,\"style\":{\"color\":{\"background\":\"#19764a\"}},\"textColor\":\"white\"} -->\n<div class=\"wp-block-button\"><a class=\"wp-block-button__link has-white-color has-text-color has-background\" style=\"border-radius:30px;background-color:#19764a\">Start Buying</a></div>\n<!-- /wp:button --></div>\n<!-- /wp:buttons --></div>\n<!-- /wp:column -->\n\n<!-- wp:column -->\n<div class=\"wp-block-column\"></div>\n<!-- /wp:column --></div>\n<!-- /wp:columns --></div></div>\n<!-- /wp:cover -->",
+		)
+	);
+
+	register_block_pattern(
+		'online-grocery-mart/bestdeal-section',
+		array(
+			'title'      => __( 'Best Deal Section', 'online-grocery-mart' ),
+			'categories' => array( 'online-grocery-mart' ),
+			'content'    => "<!-- wp:columns {\"align\":\"wide\",\"className\":\"my-5 best-deal-section mx-0\"} -->\n<div class=\"wp-block-columns alignwide my-5 best-deal-section mx-0\"><!-- wp:column {\"className\":\"mb-lg-0 mb-4\"} -->\n<div class=\"wp-block-column mb-lg-0 mb-4\"><!-- wp:cover {\"customOverlayColor\":\"#b8e6e3\",\"minHeight\":200,\"className\":\"my-0 deal-box pe-0\"} -->\n<div class=\"wp-block-cover has-background-dim my-0 deal-box pe-0\" style=\"background-color:#b8e6e3;min-height:200px\"><div class=\"wp-block-cover__inner-container\"><!-- wp:columns {\"className\":\"mb-0\"} -->\n<div class=\"wp-block-columns mb-0\"><!-- wp:column {\"verticalAlignment\":\"center\"} -->\n<div class=\"wp-block-column is-vertically-aligned-center\"><!-- wp:heading {\"level\":3,\"style\":{\"color\":{\"text\":\"#1a1a1a\"}},\"fontSize\":\"medium\"} -->\n<h3 class=\"has-text-color has-medium-font-size\" style=\"color:#1a1a1a\">Get Fresh Grocery Delivered To You!</h3>\n<!-- /wp:heading -->\n\n<!-- wp:buttons -->\n<div class=\"wp-block-buttons\"><!-- wp:button {\"borderRadius\":0,\"style\":{\"color\":{\"text\":\"#1a1a1a\"}},\"className\":\"is-style-outline my-0\"} -->\n<div class=\"wp-block-button is-style-outline my-0\"><a class=\"wp-block-button__link has-text-color no-border-radius\" style=\"color:#1a1a1a\">SHOP NOW</a></div>\n<!-- /wp:button --></div>\n<!-- /wp:buttons --></div>\n<!-- /wp:column -->\n\n<!-- wp:column {\"verticalAlignment\":\"center\",\"className\":\"mt-md-0 mt-3\"} -->\n<div class=\"wp-block-column is-vertically-aligned-center mt-md-0 mt-3\"><!-- wp:image {\"id\":941,\"sizeSlug\":\"large\",\"linkDestination\":\"none\"} -->\n<figure class=\"wp-block-image size-large\"><img src=\"" . esc_url(get_theme_file_uri()) . "/inc/block-patterns/images/deal1.png\" alt=\"\" class=\"wp-image-941\"/></figure>\n<!-- /wp:image --></div>\n<!-- /wp:column --></div>\n<!-- /wp:columns --></div></div>\n<!-- /wp:cover --></div>\n<!-- /wp:column -->\n\n<!-- wp:column {\"className\":\"mb-lg-0 mb-4\"} -->\n<div class=\"wp-block-column mb-lg-0 mb-4\"><!-- wp:cover {\"customOverlayColor\":\"#b8e6c6\",\"minHeight\":200,\"className\":\"my-0 deal-box pe-0\"} -->\n<div class=\"wp-block-cover has-background-dim my-0 deal-box pe-0\" style=\"background-color:#b8e6c6;min-height:200px\"><div class=\"wp-block-cover__inner-container\"><!-- wp:columns {\"className\":\"mb-0\"} -->\n<div class=\"wp-block-columns mb-0\"><!-- wp:column {\"verticalAlignment\":\"center\"} -->\n<div class=\"wp-block-column is-vertically-aligned-center\"><!-- wp:heading {\"level\":3,\"style\":{\"color\":{\"text\":\"#1a1a1a\"}},\"fontSize\":\"medium\"} -->\n<h3 class=\"has-text-color has-medium-font-size\" style=\"color:#1a1a1a\">Fresh Stuff &amp; More!</h3>\n<!-- /wp:heading -->\n\n<!-- wp:buttons -->\n<div class=\"wp-block-buttons\"><!-- wp:button {\"borderRadius\":0,\"style\":{\"color\":{\"text\":\"#1a1a1a\"}},\"className\":\"is-style-outline my-0\"} -->\n<div class=\"wp-block-button is-style-outline my-0\"><a class=\"wp-block-button__link has-text-color no-border-radius\" style=\"color:#1a1a1a\">SHOP NOW</a></div>\n<!-- /wp:button --></div>\n<!-- /wp:buttons --></div>\n<!-- /wp:column -->\n\n<!-- wp:column {\"verticalAlignment\":\"center\",\"className\":\"mt-md-0 mt-3\"} -->\n<div class=\"wp-block-column is-vertically-aligned-center mt-md-0 mt-3\"><!-- wp:image {\"id\":942,\"sizeSlug\":\"large\",\"linkDestination\":\"none\"} -->\n<figure class=\"wp-block-image size-large\"><img src=\"" . esc_url(get_theme_file_uri()) . "/inc/block-patterns/images/deal2.png\" alt=\"\" class=\"wp-image-942\"/></figure>\n<!-- /wp:image --></div>\n<!-- /wp:column --></div>\n<!-- /wp:columns --></div></div>\n<!-- /wp:cover --></div>\n<!-- /wp:column -->\n\n<!-- wp:column {\"className\":\"mb-lg-0 mb-4\"} -->\n<div class=\"wp-block-column mb-lg-0 mb-4\"><!-- wp:cover {\"customOverlayColor\":\"#dedfe0\",\"minHeight\":200,\"className\":\"my-0 deal-box pe-0\"} -->\n<div class=\"wp-block-cover has-background-dim my-0 deal-box pe-0\" style=\"background-color:#dedfe0;min-height:200px\"><div class=\"wp-block-cover__inner-container\"><!-- wp:columns {\"className\":\"mb-0\"} -->\n<div class=\"wp-block-columns mb-0\"><!-- wp:column {\"verticalAlignment\":\"center\"} -->\n<div class=\"wp-block-column is-vertically-aligned-center\"><!-- wp:heading {\"level\":3,\"style\":{\"color\":{\"text\":\"#1a1a1a\"}},\"fontSize\":\"medium\"} -->\n<h3 class=\"has-text-color has-medium-font-size\" style=\"color:#1a1a1a\">Organic Food At Doorstep!</h3>\n<!-- /wp:heading -->\n\n<!-- wp:buttons -->\n<div class=\"wp-block-buttons\"><!-- wp:button {\"borderRadius\":0,\"style\":{\"color\":{\"text\":\"#1a1a1a\"}},\"className\":\"is-style-outline my-0\"} -->\n<div class=\"wp-block-button is-style-outline my-0\"><a class=\"wp-block-button__link has-text-color no-border-radius\" style=\"color:#1a1a1a\">SHOP NOW</a></div>\n<!-- /wp:button --></div>\n<!-- /wp:buttons --></div>\n<!-- /wp:column -->\n\n<!-- wp:column {\"verticalAlignment\":\"center\",\"className\":\"mt-md-0 mt-3\"} -->\n<div class=\"wp-block-column is-vertically-aligned-center mt-md-0 mt-3\"><!-- wp:image {\"id\":946,\"sizeSlug\":\"large\",\"linkDestination\":\"none\"} -->\n<figure class=\"wp-block-image size-large\"><img src=\"" . esc_url(get_theme_file_uri()) . "/inc/block-patterns/images/deal3.png\" alt=\"\" class=\"wp-image-946\"/></figure>\n<!-- /wp:image --></div>\n<!-- /wp:column --></div>\n<!-- /wp:columns --></div></div>\n<!-- /wp:cover --></div>\n<!-- /wp:column --></div>\n<!-- /wp:columns -->",
+		)
+	);
+}

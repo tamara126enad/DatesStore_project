@@ -1,0 +1,519 @@
+/*
+Theme Name: Online Grocery Mart
+Theme URI: https://www.vwthemes.com/themes/free-online-grocery-wordpress-theme/
+Author: VWthemes
+Author URI: https://www.vwthemes.com
+Description: Online Grocery Mart sets a perfect platform for taking online your organic groceries and food products, fruits, grocery stores, supermarket, market, organic bakery, vegetables, organic farming, retail shop, organic soaps, Pet Food Delivery, Seafood & Meat Delivery, Daily Household Items, dairy products business. You can easily build an online grocery store or make it big for your small food and grocery stall. This astounding theme gives an elegant and sophisticated display of all your products in a modern layout. With the freedom to add a customized logo and images, it offers you a flexible header and banner with plenty of settings. To introduce your business in the best possible way, you will see that there are expertly crafted sections and beautiful CSS animations included. Being translation ready, this amazing theme allows users to translate your site into multiple languages and along with this, it comes with a retina-ready and responsive design that ensures a pixel-perfect display of your site on every device. With Woocommerce compatibility, you can get an online store on your website which also allows you to accept online payments. The proper CTAs placed at desired locations do take care of the conversion rates. It has a nice combination of boxed and grid layout with a lot of social media options, SEO friendly as well as secure and clean codes boosting the overall performance of your site. Demo: https://www.vwthemes.net/vw-grocery-pro/
+Template: food-grocery-store
+Tested up to: 5.9
+Requires PHP: 7.2
+Version: 1.9.8
+License: GPLv3.0 or later
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
+Text Domain: online-grocery-mart
+Tags: left-sidebar, right-sidebar, one-column, two-columns, three-columns, four-columns, grid-layout, wide-blocks, block-styles, flexible-header, block-patterns, custom-colors, custom-background, custom-logo, custom-menu, custom-header, editor-style, featured-images, footer-widgets, sticky-post, full-width-template, theme-options, translation-ready, threaded-comments, post-formats, rtl-language-support, blog, portfolio, e-commerce
+*/
+
+/*------- DEFAULT CSS --------*/
+
+body{
+	font-family: 'Roboto', sans-serif !important;
+	color: #909090 !important;
+}
+h1,h2,h3,h4,h5,h6{
+	font-family: 'Prata', serif !important;
+	color: #000000 !important;
+}
+a,.add-to-cart-btn a:hover, .deal-box h3 a:hover{
+	color: #f79a21;
+    text-decoration: none !important;
+}
+a:hover{
+    text-decoration: none !important;
+}
+select{
+    outline: none;
+    border-bottom: none;
+}
+#footer .search-form .search-field:focus,#footer input[type="submit"]:focus,a.scrollup i:focus{
+    outline: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+}
+
+/*------- COMMON COLOR CSS --------*/
+/* green bg */
+.more-btn a,#sidebar h3,input[type="submit"],.scrollup i,#footer-2,.pagination span, .pagination a,.woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button, .woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt,.main-navigation .current_page_item > a, .main-navigation .current-menu-item > a, .main-navigation .current_page_ancestor > a,.main-navigation a:hover,#slider .carousel-control-prev-icon, #slider .carousel-control-next-icon,.order-track i.fas.fa-angle-right,span.wishlist-counter,.hot-deals-btn a,#comments input[type="submit"],nav.woocommerce-MyAccount-navigation ul li,.widget_product_search button{
+	background: #19764a;
+}
+.main-navigation ul.sub-menu a:hover,#footer .textwidget a, #sidebar .textwidget a, .woocommerce-product-details__short-description p a, .textwidget p a, .entry-content a, #comments p a, .comment-meta.commentmetadata a, #content-vw a,#footer li a:hover,#sidebar ul li a:hover{
+	color: #19764a;
+}
+/* yellow bg */
+.more-btn a:hover,input[type="submit"]:hover,.scrollup i:hover,.woocommerce #respond input#submit:hover, .woocommerce a.button:hover, .woocommerce button.button:hover, .woocommerce input.button:hover, .woocommerce #respond input#submit.alt:hover, .woocommerce a.button.alt:hover, .woocommerce button.button.alt:hover, .woocommerce input.button.alt:hover,#slider .carousel-control-prev-icon:hover, #slider .carousel-control-next-icon:hover,.custom-social-icons i:hover,.hot-deals-btn a:hover,.woocommerce span.onsale{
+	background: #f79a21;
+}
+/* white color */
+.more-btn a:hover,.main-navigation .current_page_item > a, .main-navigation .current-menu-item > a, .main-navigation .current_page_ancestor > a,.main-navigation a:hover,#slider .carousel-control-prev-icon, #slider .carousel-control-next-icon,.custom-social-icons i:hover,.hot-deals-btn a,#sidebar p a{
+	color: #fff;
+}
+.post-main-box h2 a, .post-info span a,.top-bar p,button.product-btn,.product-cat li a,.order-track span,.custom-social-icons i,.order-track i.fas.fa-map-marker-alt,.main-navigation a {
+	color: #2f3d61;
+}
+
+/*------- TOP HEADER CSS --------*/
+.top-bar,.product-cat-box,.product-cat,.search-box form.woocommerce-product-search,.post-info,#product-sec {
+    background: #f7f7f7;
+}
+.top-bar p {
+    padding: 12px 0;
+}
+.top-bar p a:hover{
+    color: #19764a;
+}
+.discount-line {
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.translate-lang {
+    padding: 8px 0;
+}
+.currency-box{
+	padding: 10px 0;
+}
+.translate_lang .switcher, .switcher .selected a {
+    border: solid 1px #dee0e4 !important;
+    border-radius: 5px;
+}
+.currency-box form#alg_currency_selector {
+    border: solid 1px #dee0e4;
+    padding: 3px;
+    border-radius: 5px;
+}
+button.product-btn {
+    font-size: 15px;
+}
+
+/*------- HEADER CSS --------*/
+p.site-title, .logo h1{
+	font-size: 28px;
+}
+.logo .site-title a:hover{
+    color: #f79a21;
+}
+.product-cat-box{
+    position: relative;
+    left: 0;
+    right: 0;
+	border:none;
+}
+.product-cat {
+    border: none;
+    width: 100%;
+}
+.product-cat li a {
+    font-size: 15px;
+}
+.search-box form.woocommerce-product-search{
+	border-radius: 0;
+	border:none;
+}
+#middle-header input[type="search"] {
+    border-radius: 0;
+    background: transparent;
+}
+.search-box button {
+    background: url(images/search.png) no-repeat scroll 20px 13px;
+    text-indent: -9999px;
+    float: right;
+    width: 12%;
+}
+.order-track span {
+    background: #f7f7f7;
+    padding: 10px 5px;
+    display: inline-block;
+}
+.order-track i.fas.fa-map-marker-alt{
+	font-size: 25px;
+}
+.order-track i.fas.fa-angle-right {
+    padding: 5px 10px;
+    color: #fff;
+    position: relative;
+    left: 25px;
+}
+#middle-header .custom-social-icons h3 {
+    display: none;
+}
+.custom-social-icons i {
+    border-radius: 30px;
+    font-size: 14px;
+    padding: 14px;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+}
+.wishlist i {
+    color: #f79a21;
+}
+.account i{
+	color: #19764a;
+}
+.cart_no {
+    position: relative;
+}
+.cart_no i {
+    background-image: linear-gradient(to right, #19764a , #b0d879);
+    color: #fff;
+    padding: 20px;
+    font-size: 15px;
+    border-radius: 5px;
+}
+span.cart-value {
+    background: #f79a21;
+    color: #fff;
+    border-radius: 6px;
+    padding: 2px 8px;
+    top: 30%;
+    right: auto;
+    left: 0%;
+    bottom: auto;
+    font-weight: bold;
+    transform: translateX(-10%);
+}
+span.wishlist-counter {
+    top: 20px;
+    right: 0px;
+    left: auto;
+    bottom: auto;
+}
+.account i:hover, .cart_no i:hover{
+    color: #f79a21;
+}
+.wishlist i:hover {
+    color: #19764a;
+}
+.main-navigation a {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.main-navigation ul ul{
+	border-color: #19764a;
+}
+.hot-deals-btn a{
+	border-radius: 6px;
+	font-weight: bold;
+	font-size: 15px;
+}
+
+/*------- SLIDER CSS --------*/
+#slider{
+	background: #fff;
+}
+#slider img {
+    opacity: 0.4;
+}
+#slider .inner_carousel h1 {
+    font-size: 70px;
+    color: #000000;
+    font-weight: 500;
+}
+.more-btn a {
+    font-size: 14px;
+    border-radius: 35px;
+}
+#slider .carousel-control-prev {
+    left: 87%;
+}
+#slider .carousel-control-prev-icon {
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-right: solid 2px #fff;
+}
+#slider .carousel-control-next-icon {
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-left: solid 2px #fff;
+}
+.carousel-control-prev, .carousel-control-next {
+    top: auto !important;
+    bottom: 25% !important;
+}
+
+/*------- BEST DEAL CSS --------*/
+.deal-box-color1 {
+    background: #b8e6e3;
+}
+.deal-box-color2 {
+    background: #b8e6c6;
+}
+.deal-box-color3 {
+    background: #e3e3e3;
+}
+.deal-box {
+    border-radius: 10px;
+}
+.deal-box h3 a {
+    color: #000;
+    font-size: 25px;
+    font-weight: 500;
+}
+.add-to-cart-btn a {
+    color: #000;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: bold;
+}
+.add-to-cart-btn i {
+    background: #ff0000;
+    padding: 4px 8px;
+    border-radius: 50%;
+    color: #fff;
+}
+.deal-box h3 {
+    padding: 0;
+    line-height: 0.9;
+}
+.con-box {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/*------- SIDEBAR CSS --------*/
+#sidebar h3,#footer h3, #footer .wp-block-search .wp-block-search__label{
+	font-size: 25px;
+	color: #fff !important;
+    font-weight: 600;
+}
+#sidebar input[type="search"]{
+    padding: 15px; 
+}
+#footer .wp-block-search .wp-block-search__label{
+    font-family: 'Prata', serif !important;
+}
+#sidebar .wp-block-search .wp-block-search__label, #footer .wp-block-search .wp-block-search__button, #sidebar .wp-block-search .wp-block-search__button{
+   background: #19764a; 
+}
+#sidebar ul li a{
+    font-size: 15px;
+}
+/*------- POST CSS --------*/
+.post-main-box h2{
+	font-size: 25px;
+}
+.sticky .post-main-box h2:before{
+	color: #f79a21;
+}
+.post-main-box:hover h2 a, .post-main-box:hover .post-info span a, .post-info:hover a {
+    color: #19764a;
+}
+#comments a.comment-reply-link {
+    background: #19764a;
+    padding: 10px;
+}
+
+/*------- WOOCOMMERCE CSS --------*/
+.woocommerce ul.products li.product .price, .woocommerce div.product p.price, .woocommerce div.product span.price{
+	color: #19764a !important;
+}
+nav.woocommerce-MyAccount-navigation ul li{
+    border-radius: 30px;
+}
+nav.woocommerce-MyAccount-navigation ul li a{
+    color: #fff !important;
+}
+.woocommerce-input-wrapper input#billing_phone {
+    padding: 10px;
+    border: 1px solid #c8c8c8;
+}
+nav.woocommerce-MyAccount-navigation ul li a {
+    color: #fff !important;
+    padding: 0 0px 0 15px;
+}
+h3#order_review_heading{
+    padding: 15px 0 0 0;
+}
+.woocommerce-cart table.cart td.actions .coupon .input-text{
+    width: 105px !important;
+}
+button.single_add_to_cart_button.button.alt{
+    font-size: 15px;
+}
+/*----------- PRELOADER ----------*/
+#preloader {
+  background-color: #19764a;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 999999;
+  height: 100%;
+}
+.loader-inner {
+  bottom: 0;
+  height: 60px;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100px;
+}
+.loader-line-wrap {
+  animation: spin 2000ms cubic-bezier(.175, .885, .32, 1.275) infinite;
+  box-sizing: border-box;
+  height: 50px;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  transform-origin: 50% 100%;
+  width: 100px;
+}
+.loader-line {
+  border: 4px solid #f79a21;
+  border-radius: 100%;
+  box-sizing: border-box;
+  height: 100px;
+  left: 0;
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100px;
+}
+.loader-line-wrap:nth-child(1) { animation-delay: -50ms; }
+.loader-line-wrap:nth-child(2) { animation-delay: -100ms; }
+.loader-line-wrap:nth-child(3) { animation-delay: -150ms; }
+.loader-line-wrap:nth-child(4) { animation-delay: -200ms; }
+.loader-line-wrap:nth-child(5) { animation-delay: -250ms; }
+
+.loader-line-wrap:nth-child(1) .loader-line {
+  height: 90px;
+  width: 90px;
+  top: 7px;
+}
+.loader-line-wrap:nth-child(2) .loader-line {
+  height: 76px;
+  width: 76px;
+  top: 14px;
+}
+.loader-line-wrap:nth-child(3) .loader-line {
+  height: 62px;
+  width: 62px;
+  top: 21px;
+}
+.loader-line-wrap:nth-child(4) .loader-line {
+  height: 48px;
+  width: 48px;
+  top: 28px;
+}
+.loader-line-wrap:nth-child(5) .loader-line {
+  height: 34px;
+  width: 34px;
+  top: 35px;
+}
+@keyframes spin {
+  0%, 15% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.elementor-page #preloader{
+  display: none;
+}
+
+/*------- MEDIA CSS --------*/
+@media screen and (max-width:720px) {
+    .logo {
+        background: #19764a;
+    }
+    button.product-btn{
+        border: none;
+        border-radius: 0px;
+    }
+    .custom-social-icons i {
+        font-size: 15px;
+        padding: 12px;
+    }
+    .search-box button{
+        width: 20%;
+    }
+    .custom-social-icons {
+        text-align: center;
+    }
+    #slider .inner_carousel h1{
+        font-size: 20px;
+    }
+    .carousel-control-prev, .carousel-control-next {
+        bottom: 10px !important;
+    }
+    #slider .carousel-control-prev {
+        left: 10px;
+    }
+    #slider .carousel-control-next {
+        right: 10px;
+    }
+    .one {
+        order: 2;
+    }
+    #slider .more-btn {
+      text-align: center;
+  }
+}
+@media screen and ( max-width: 788px ) and ( min-width: 768px ) {
+	span.cart-value {
+        left: 5px;
+    }
+    #slider .carousel-caption {
+        right: 35% !important;
+    }
+    #slider .inner_carousel h1 {
+        font-size: 35px;
+    }
+    #slider .carousel-control-prev {
+        left: 76%;
+    }
+    .one {
+        order: 2;
+    }
+    .search-box button{
+      width: 20%;  
+    }
+}
+@media screen and (max-width: 1000px){
+    .toggle-nav i {
+        background-image: linear-gradient(to right, #19764a , #b0d879);
+        border-radius: 5px;
+    }
+    .order-track:hover form.track_order{
+        width: auto;
+    }
+}
+@media screen and ( max-width: 1199px ) and ( min-width: 1024px ) {
+    #slider .carousel-caption {
+        right: 35% !important;
+    }
+    #slider .inner_carousel h1 {
+        font-size: 40px;
+    }
+    #slider .carousel-control-prev {
+        left: 85.5%;
+    }
+    .order-track i.fas.fa-angle-right{
+        left: 20px;
+    }
+    .order-track span {
+        padding: 10px 1px;
+        font-size: 12px;
+    }
+    .order-track i.fas.fa-map-marker-alt {
+        font-size: 18px;
+    }
+}
